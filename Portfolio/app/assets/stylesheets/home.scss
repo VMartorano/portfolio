@@ -1,0 +1,367 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$headerFont: "Poiret One"; //sans-serif
+$header2Font: "Josefin Sans"; //sans-serif
+$headerSerif: "Josefin Slab"; //serif
+$textFont: "Raleway";
+$primaryColor: #e8e8e8; // light gray
+$secondaryColor: #f1efe9; // off-white
+$tertiaryColor: #232323; // charcoal
+
+body {
+  background-size: cover;
+  background-color: $secondaryColor;
+}
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  // padding: 40px 0;
+}
+section.module.parallax {
+  height: 55%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax-1 {
+  background-image: image-url("main-bg2.jpeg");
+
+}
+section.module.parallax-2 {
+  background-image: url("wood-bg.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("main-bg.jpeg");
+}
+
+/* ============================================================
+  MAIN
+============================================================ */
+.main-bg {
+  // background-image: image-url("main-bg2.jpeg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  // margin-bottom: 140px;
+
+  #main-container {
+    background-color: rgba(#000, 0.65);
+    padding-top: 20px;
+    background-size: cover;
+
+
+    h1 {
+      color: $primaryColor;
+      font-family: $headerFont, "Century Gothic", sans-serif;
+      font-size: 80px;
+      font-weight: 200;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #navbar{
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .navbar_link {
+          color: $primaryColor;
+          font-family: $headerSerif, serif;
+          font-size: 28px;
+          opacity: 0.7;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 1.0;
+          }
+        }
+      }
+    }
+
+    hr {
+      color: $primaryColor;
+      margin-bottom: 30px;
+      width: 40%;
+    }
+
+    .main-p {
+      color: $primaryColor;
+      font-family: $textFont;
+      font-size: 18px;
+      line-height: 30px;
+      margin-left: 27.5%;
+      margin-right: 27.5%;
+      text-align: center;
+      width: 45%;
+    }
+
+    .face-circle {
+      border-radius: 100px;
+      margin-bottom: 30px;
+      width: 150px;
+    }
+
+    .icons {
+      margin-top: -20px;
+      padding-bottom: 20px;
+      text-align: center;
+
+      .icon-link {
+        color: $primaryColor;
+        font-size: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+/* ============================================================
+  ABOUT
+============================================================ */
+
+.about-container {
+  // background-color: $secondaryColor;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+
+  .about-header {
+    font-family: $header2Font, sans-serif;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-left: 5.5%;
+    margin-right:2.5%;
+    width: 40%;
+  }
+
+  .about-div{
+    display: inline-block;
+
+    .about-ul {
+      display: inline-block;
+      font-family: $header2Font;
+      vertical-align: top;
+    }
+
+    .ul-h4 {
+      margin-top: -20px;
+      text-decoration: underline;
+    }
+
+    .about-h3 {
+      font-family: $headerSerif;
+      font-size: 24px;
+      font-weight: bolder
+    }
+
+    .skills-h3 {
+      text-align: center;
+      vertical-align: top;
+    }
+
+    .about-p {
+      font-family: $textFont;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+
+    }
+
+    .about-li {
+      font-family: $textFont;
+      font-size: 16px;
+    }
+  }
+
+  .about-skills {
+    width: 40%;
+    margin-left: 2.5%;
+    margin-right: 5.5%;
+    vertical-align: top;
+  }
+}
+
+
+/* ============================================================
+  PROJECTS
+============================================================ */
+
+#projects {
+  width: 100%;
+  background-color: $secondaryColor;
+
+  .projects-container {
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .projects-h2 {
+      color: $primaryColor;
+      font-family: $header2Font;
+      font-size: 50px;
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    .project-div {
+      display: inline-block;
+      width: 30%;
+
+      .project-pic {
+        width: 100%;
+      }
+
+      .project-h4 {
+        color: $primaryColor;
+        font-family: $headerSerif;
+        font-size: 24px;
+        text-align: center;
+      }
+      .project-p{
+        color: $primaryColor;
+        font-family: $textFont;
+      }
+    }
+    .college-cook-div {
+      margin-left: 0;
+      margin-right: 2.5%;
+    }
+
+    .highline-div {
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+    }
+
+    .sketches-div{
+      margin-left: 2.5%;
+    }
+  }
+}
+
+/* ============================================================
+  CONTACT
+============================================================ */
+
+#contact {
+  width: 100%;
+}
+
+#form-div {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  .contact_form{
+
+    .learn_more {
+      color: $tertiaryColor;
+      font-family: $header2Font;
+      font-size: 50px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .contact_me {
+      font-family: $headerSerif;
+      font-size: 24px;
+      font-weight: bolder;
+      margin-bottom: 20px;
+      margin-top: -20px;
+      text-align: center;
+    }
+
+    .contact-text {
+      font-family: $textFont;
+      text-align: center;
+    }
+
+    .contact-or {
+      font-family: $headerSerif;
+      text-align: center;
+    }
+  }
+
+  .email-div {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+    .email-input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $tertiaryColor;
+      border-left: 1px solid $tertiaryColor;
+      font-family: $textFont;
+      width: 30%;
+    }
+
+    .from {
+      margin-left: 5%;
+    }
+
+    .subject{
+      float: right;
+      margin-right: 5%;
+    }
+
+    #content-input{
+      font-family: $textFont;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+
+    }
+
+    .form-button {
+      background-color: $secondaryColor;
+      border: none;
+      color: $tertiaryColor;
+      cursor: pointer;
+      font-family: $headerSerif;
+      font-weight: bold;
+      margin-left: 45%;
+      margin-right: 45%;
+      text-align: center;
+      width: 10%;
+    }
+
+    .form-button:hover{
+      font-weight: bolder;
+    }
+  }
+}
