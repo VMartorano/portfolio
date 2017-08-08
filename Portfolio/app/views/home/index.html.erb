@@ -1,0 +1,126 @@
+<section class="module parallax parallax-1">
+  <div class="main-bg container">
+    <div id="main-container">
+      <h1>Vincent Martorano</h1>
+      <nav>
+        <ul id="navbar">
+          <li><%= link_to "About", "#about", class: "navbar_link"%> </li>
+          <li><%= link_to "Projects", "#projects", class: "navbar_link"%> </li>
+          <li><%= link_to "Contact", "#contact", class: "navbar_link"%> </li>
+        </ul>
+      </nav>
+      <hr>
+      <p class="main-p" id="main-p-1">Hi, my name is Vincent. I create and develop visually striking and functioning websites as a New York City based Web Developer. With my diverse set of full-stack development skills, I aim to create the sharpest, yet smoothest of wesites</p>
+      <br>
+      <p class="main-p" id="main-p-2">Coming from a background in Finance, I look to blend the two fields together and join my knowlege of each. While I am not developing sites, I like to tap into my inner artist and create sketches as well as take photographs.</p>
+
+      <center><%= image_tag "headshot-face.jpg", class: "face-circle" %></center>
+      <p class="icons">
+        <a href="https://www.linkedin.com/in/vincent-martorano/" class="icon-link">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/VMartorano" class="icon-link">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="module content">
+  <div class="about-container container">
+    <h2 class="about-header">About</h2>
+    <div class="about-div about-text">
+      <h3 class="about-h3">My name is Vincent Martorano, and I am web developer.</h3>
+      <p class="about-p1 about-p">I find the overlap of both web design and development infinitely interesting. Ranging from front-end to back-end development. I love both sides, and enjoy building my sites from the ground all the way up, especially when they become mobile responsive. My skills in both drawing and photography also allow me to see a more eye catching design.</p>
+      <p class="about-p2 about-p">Contact Me!</p>
+    </div>
+    <div class="about-div about-skills">
+      <h3 class="about-h3 skills-h3">Skills</h3>
+      <ul class="about-ul about-front"><h4 class="ul-h4">Front End</h4>
+        <li class="about-li">HTML5</li>
+        <li class="about-li">CSS3</li>
+        <li class="about-li">Sass</li>
+        <li class="about-li">JavaScript</li>
+      </ul>
+      <ul class="about-ul about-back"><h4 class="ul-h4">Back End</h4>
+        <li class="about-li">Ruby on Rails</li>
+        <li class="about-li">Sinatra</li>
+        <li class="about-li">SQL</li>
+      </ul>
+      <ul class="about-ul about-other"><h4 class="ul-h4">Other</h4>
+        <li class="about-li">Microsoft Access</li>
+        <li class="about-li">Microsoft Excel</li>
+        <li class="about-li">Photography</li>
+        <li class="about-li">Photoshop</li>
+        <li class="about-li">Sketching</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="module parallax parallax-2">
+  <div class="container projects-container">
+    <h2 class="projects-h2">Projects</h2>
+    <div class="project-div college-cook-div">
+      <a class="project-link college-cook-link" href="https://still-castle-41629.herokuapp.com">
+        <%= image_tag "college-cook.png", class: "project-pic" %>
+        <h4 class="project-h4 college-cook-h4">College Cook</h4>
+      </a>
+      <p class="project-p college-cook-p">Learning to cook when you first live on your own can be difficult. With College Cook, the user can input inredients that he or she already has, and will get a list of recipes that use those very same ingredients. </p>
+    </div>
+    <div class="project-div highline-div">
+      <a class="project-link highline-link" href="https://fast-lake-25946.herokuapp.com/">
+        <%= image_tag "highline.png", class: "project-pic" %>
+        <h4 class="project-h4 highline-h4">Highline </h4>
+      </a>
+      <p class="project-p highline-p">While the marijuana business is booming within the states that have legalized it, I felt that the people of New York City, as a leader in political movements, statements, and progression, should learn about the medicinal aspects of cannabis, as well as the products that come from the plant. </p>
+    </div>
+    <div class="project-div sketches-div">
+      <a class="project-link sketches-link" href="/sketches">
+          <%= image_tag "car-sketch.jpg", class: "project-pic sketches-pic" %>
+        <h4 class="project-h4 sketches-h4">Sketches</h4>
+      </a>
+      <p class="project-p sketches-p">In my spare time, I sometimes like to draw and sketch. Here are a few of my favorite.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section class="module content">
+  <div id="contact" class="contact container">
+    <div id="form-div">
+      <div class="contact_form">
+        <h2 class="learn_more">Want to get in touch?</h2>
+        <p class="contact_me">Contact Me!</p>
+        <p class="contact-text">Connect with me thorugh <a href="linked"></a>Linkedin</p>
+        <p class="contact-or">OR</p>
+        <p class="contact-text">Send me an email.</p>
+      </div>
+      <br><br>
+
+      <div class="email-div">
+        <form action="/form-response" method ="post">
+          <input class="email-input from" type="text" name="from" value="" placeholder="emailaddress@example.com">
+          <input class="email-input subject" type="text" name="subject" value="" placeholder="Subject">
+          <br>
+          <br>
+          <textarea id="content-input" type="text" name="content" value="" placeholder="Type message here..." rows="8" cols="70"></textarea>
+          <br>
+          <br>
+          <input class="form-button" id="submit-button" type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module parallax parallax-3">
+  <div class="container">
+    <h2></h2>
+  </div>
+</section>

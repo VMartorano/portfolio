@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def index
+
   end
 
   def email
@@ -29,9 +30,10 @@ class HomeController < ApplicationController
     puts "Status code = #{response.status_code}"
     puts response.body
 
-    puts "MESAGE SAKJFSKDFSADFNSAJKDFSAD F SENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-
     redirect_to root_path
+  end
+
+  def sketches
   end
 
 end

@@ -9,6 +9,7 @@ $textFont: "Raleway";
 $primaryColor: #e8e8e8; // light gray
 $secondaryColor: #f1efe9; // off-white
 $tertiaryColor: #232323; // charcoal
+$mobileBreakPoint: 48em;
 
 body {
   background-size: cover;
@@ -138,7 +139,14 @@ section.module.parallax-3 {
         margin-right: 10px;
         text-align: center;
         text-decoration: none;
+        transition: color .5s;
       }
+
+      .icon-link:hover{
+        color: $tertiaryColor;
+      }
+
+
     }
   }
 }
@@ -228,6 +236,7 @@ section.module.parallax-3 {
     width:90%;
     margin-left: 5%;
     margin-right: 5%;
+    padding-bottom: 20px;
 
     .projects-h2 {
       color: $primaryColor;
@@ -239,35 +248,54 @@ section.module.parallax-3 {
 
     .project-div {
       display: inline-block;
+      height: 450px;
       width: 30%;
+      vertical-align: top;
 
-      .project-pic {
-        width: 100%;
+      .project-link {
+        text-decoration: none;
+
+
+        .project-pic {
+          width: 100%;
+        }
+
+        .project-h4 {
+          color: $primaryColor;
+          font-family: $headerSerif;
+          font-size: 24px;
+          text-align: center;
+        }
       }
 
-      .project-h4 {
-        color: $primaryColor;
-        font-family: $headerSerif;
-        font-size: 24px;
-        text-align: center;
-      }
-      .project-p{
+      .project-p {
         color: $primaryColor;
         font-family: $textFont;
+        text-align: center;
+      }
+
+      .project-link:hover {
+          font-weight: bolder;
       }
     }
+
     .college-cook-div {
       margin-left: 0;
-      margin-right: 2.5%;
+      margin-right: 2.25%;
+
     }
 
     .highline-div {
-      margin-left: 2.5%;
-      margin-right: 2.5%;
+      margin-left: 2.25%;
+      margin-right: 2.25%;
     }
 
     .sketches-div{
-      margin-left: 2.5%;
+      margin-left: 2.25%;
+      margin-right: 0;
+
+      .sketches-pic {
+      }
     }
   }
 }
@@ -356,12 +384,53 @@ section.module.parallax-3 {
       font-weight: bold;
       margin-left: 45%;
       margin-right: 45%;
+      padding-bottom: 5px;
+      padding-top: 5px;
       text-align: center;
+      transition: background-color .5s, color .5s;
       width: 10%;
     }
 
-    .form-button:hover{
-      font-weight: bolder;
+    .form-button:hover {
+      background-color: $tertiaryColor;
+      color: $primaryColor;
     }
   }
 }
+
+/* ============================================================
+  SKETCHES
+============================================================ */
+ .sketches-container {
+   margin-left: 5%;
+   margin-right: 5%;
+   width: 90%;
+
+   .sketches-h2 {
+     color: $tertiaryColor;
+     font-family: $header2Font;
+     font-size: 50px;
+     padding-top: 40px;
+     text-align: center;
+   }
+
+   .back {
+     color: $tertiaryColor;
+     font-family: $textFont;
+     font-size: 16px;
+     text-align: center;
+     text-decoration: none;
+   }
+
+   .single-sketch-div{
+     display: inline-block;
+     margin-left: 4%;
+     margin-right: 4%;
+     width: 40%;
+
+     .single-sketch-pic {
+       vertical-align: middle;
+       width: 100%;
+     }
+   }
+ }

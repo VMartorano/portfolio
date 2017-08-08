@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   post "/form-response" => "home#email"
+
+  get "/sketches" => "home#sketches"
+
+  
 end
