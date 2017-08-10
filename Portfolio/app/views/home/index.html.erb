@@ -4,12 +4,13 @@
       <h1>Vincent Martorano</h1>
       <nav>
         <ul id="navbar">
-          <li><%= link_to "About", "#about", class: "navbar_link"%> </li>
-          <li><%= link_to "Projects", "#projects", class: "navbar_link"%> </li>
-          <li><%= link_to "Contact", "#contact", class: "navbar_link"%> </li>
+          <li><%= link_to "About", "#about", class: "navbar_link
+          about_link"%> </li>
+          <li><%= link_to "Projects", "#projects", class: "navbar_link projects_link"%> </li>
+          <li><%= link_to "Contact", "#contact", class: "navbar_link contact_link"%> </li>
         </ul>
       </nav>
-      <hr>
+      <hr class="nav-hr">
       <p class="main-p" id="main-p-1">Hi, my name is Vincent. I create and develop visually striking and functioning websites as a New York City based Web Developer. With my diverse set of full-stack development skills, I aim to create the sharpest, yet smoothest of wesites</p>
       <br>
       <p class="main-p" id="main-p-2">Coming from a background in Finance, I look to blend the two fields together and join my knowlege of each. While I am not developing sites, I like to tap into my inner artist and create sketches as well as take photographs.</p>
@@ -34,28 +35,30 @@
     <div class="about-div about-text">
       <h3 class="about-h3">My name is Vincent Martorano, and I am web developer.</h3>
       <p class="about-p1 about-p">I find the overlap of both web design and development infinitely interesting. Ranging from front-end to back-end development. I love both sides, and enjoy building my sites from the ground all the way up, especially when they become mobile responsive. My skills in both drawing and photography also allow me to see a more eye catching design.</p>
-      <p class="about-p2 about-p">Contact Me!</p>
+      <p class="about-p2 about-p"><a href="#contact" class="contact-me-link">Contact me here!</a></p>
     </div>
     <div class="about-div about-skills">
       <h3 class="about-h3 skills-h3">Skills</h3>
-      <ul class="about-ul about-front"><h4 class="ul-h4">Front End</h4>
-        <li class="about-li">HTML5</li>
-        <li class="about-li">CSS3</li>
-        <li class="about-li">Sass</li>
-        <li class="about-li">JavaScript</li>
-      </ul>
-      <ul class="about-ul about-back"><h4 class="ul-h4">Back End</h4>
-        <li class="about-li">Ruby on Rails</li>
-        <li class="about-li">Sinatra</li>
-        <li class="about-li">SQL</li>
-      </ul>
-      <ul class="about-ul about-other"><h4 class="ul-h4">Other</h4>
-        <li class="about-li">Microsoft Access</li>
-        <li class="about-li">Microsoft Excel</li>
-        <li class="about-li">Photography</li>
-        <li class="about-li">Photoshop</li>
-        <li class="about-li">Sketching</li>
-      </ul>
+      <div class="lists-div">
+        <ul class="about-ul about-front"><h4 class="ul-h4">Front End</h4>
+          <li class="about-li">HTML5</li>
+          <li class="about-li">CSS3</li>
+          <li class="about-li">Sass</li>
+          <li class="about-li">JavaScript</li>
+        </ul>
+        <ul class="about-ul about-back"><h4 class="ul-h4">Back End</h4>
+          <li class="about-li">Ruby on Rails</li>
+          <li class="about-li">Sinatra</li>
+          <li class="about-li">SQL</li>
+        </ul>
+        <ul class="about-ul about-other"><h4 class="ul-h4">Other</h4>
+          <li class="about-li">Microsoft Access</li>
+          <li class="about-li">Microsoft Excel</li>
+          <li class="about-li">Photography</li>
+          <li class="about-li">Photoshop</li>
+          <li class="about-li">Sketching</li>
+        </ul>`
+      </div>
     </div>
   </div>
 </section>
@@ -72,6 +75,7 @@
       </a>
       <p class="project-p college-cook-p">Learning to cook when you first live on your own can be difficult. With College Cook, the user can input inredients that he or she already has, and will get a list of recipes that use those very same ingredients. </p>
     </div>
+    <hr class="project-hr">
     <div class="project-div highline-div">
       <a class="project-link highline-link" href="https://fast-lake-25946.herokuapp.com/">
         <%= image_tag "highline.png", class: "project-pic" %>
@@ -79,13 +83,15 @@
       </a>
       <p class="project-p highline-p">While the marijuana business is booming within the states that have legalized it, I felt that the people of New York City, as a leader in political movements, statements, and progression, should learn about the medicinal aspects of cannabis, as well as the products that come from the plant. </p>
     </div>
+    <hr class="project-hr">
     <div class="project-div sketches-div">
       <a class="project-link sketches-link" href="/sketches">
           <%= image_tag "car-sketch.jpg", class: "project-pic sketches-pic" %>
         <h4 class="project-h4 sketches-h4">Sketches</h4>
       </a>
-      <p class="project-p sketches-p">In my spare time, I sometimes like to draw and sketch. Here are a few of my favorite.</p>
+      <p class="project-p sketches-p">In my spare time, I sometimes like to draw and sketch. Here are a few of my favorites.</p>
     </div>
+    <hr class="project-hr">
   </div>
 </section>
 
@@ -105,7 +111,7 @@
 
       <div class="email-div">
         <form action="/form-response" method ="post">
-          <input class="email-input from" type="text" name="from" value="" placeholder="emailaddress@example.com">
+          <input class="email-input from" type="text" name="from" value="" placeholder="email@example.com">
           <input class="email-input subject" type="text" name="subject" value="" placeholder="Subject">
           <br>
           <br>
